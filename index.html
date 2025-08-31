@@ -32,8 +32,10 @@
     </nav>
   </header>
 
-  <main>
+  <main>    
     <div class="jumbotron">
+      <!-- Matrix-like background effect -->
+      <div class="matrix-bg" id="matrix-bg"></div>
       <h1 id="jumbotron-title">Welcome to My Website</h1>
       <p id="jumbotron-description">Experience the best of my work</p>
       <a href="#about" class="btn">Learn More</a>
@@ -42,16 +44,24 @@
     <div class="container">
       <div id="content">
         <article class="card" id="about">
-          <h2>About Me</h2>
+          <h2>> About Me</h2>
           <hr />
-          <img src="./assets/images/computer.gif" alt="My Name" class="img-about" />
+          <img src="./assets/images/computer.gif" alt="My Name" class="img-about" loading="lazy" />
 
-          <p class="text-center">hi, I'm a Programmer who have been following about technology since I was 12 years old. I like playing computer, games and watching anime. pursuing master's degree in computer science has always been my ambition. i'm focusing on back-end development, Devops, and Cyber Security</p>
+          <p class="text-center">
+            Hi there! 👋 I'm a passionate <strong>Software Engineer</strong> who has been diving deep into the world of technology since I was 12 years old. 
+            <br><br>
+            My journey in programming has been fueled by curiosity and a love for problem-solving. I enjoy building robust applications, exploring new frameworks, and turning complex ideas into elegant code solutions.
+            <br><br>
+            When I'm not coding, you'll find me gaming 🎮, reading manga 📚, or experimenting with the latest tech trends. My ultimate goal is to pursue a master's degree in computer science and continue growing as a developer.
+            <br><br>
+            Currently specializing in <span class="highlight">Back-end Development</span>, <span class="highlight">DevOps</span>, and <span class="highlight">Cyber Security</span> 🔐
+          </p>
         
         </article>
 
         <article class="card" id="skills">
-          <h2>Skills</h2>
+          <h2>> Skills</h2>
           <hr />
           
           <h4 class="text-center">Programming Languages</h4>
@@ -61,7 +71,7 @@
               <span>HTML5</span>
             </div>
             <div class="skill">
-              <img src="https://simpleicons.org/icons/css3.svg" alt="CSS3" class="skill-icon" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="skill-icon" />
               <span>CSS3</span>
             </div>
             <div class="skill">
@@ -242,7 +252,7 @@
         </article>
 
         <article class="card" id="projects">
-          <h2>Projects</h2>
+          <h2>> Projects</h2>
           <hr />
 
           <div class="projects">
@@ -258,7 +268,7 @@
             </div>
 
             <div class="project">
-              <img src="./assets/images/discordbot.jpeg" alt="Project 2" class="project-img" />
+              <img src="./assets/images/discordbot.jpeg" alt="Project 2" class="project-img" loading="lazy" />
               <div class="project-text">
                 <h3>Kato Discord Bot</h3>
                 <p>
@@ -280,7 +290,7 @@
             </div>
 
             <div class="project">
-              <img src="./assets/images/kusonime.jpeg" alt="Project 3" class="project-img" />
+              <img src="./assets/images/kusonime.jpeg" alt="Project 3" class="project-img" loading="lazy" />
               <div class="project-text">
                 <h3>Kusonime API</h3>
                 <p>
@@ -297,7 +307,7 @@
 
       <aside>
         <article class="card aside-content" id="personal-info">
-          <h2>Personal Information</h2>
+          <h2>> Personal Information</h2>
           <hr />
           <div class="about-me">
             <img src="./assets/images/avatar.jpeg" alt="My Name" class="profile-img" />
@@ -312,88 +322,137 @@
         </article>
 
         <article class="card aside-content" id="devices">
-          <h2>My Devices</h2>
+          <h2>> My Tech Arsenal</h2>
           <hr />
           <div class="devices">
             <div class="device">
+              <div class="device-header">
+                <h3>🖥️ Main Battlestation</h3>
+                <span class="device-status active">Active</span>
+              </div>
               <div class="device-text">
-                <h3>PC 🖥️</h3>
-                <p>
-                  <ul>
-                    <li><strong>Processor</strong>: Intel Core i5-13500</li>
-                    <li><strong>Motherboard</strong>: MSI B660 Tomahawk WiFi</li>
-                    <li><strong>RAM</strong>: 32GB DDR4 3200MHz</li>
-                    <li><strong>Storage</strong>: 1TB NVMe SSD MSI, 1TB NVMe SSD Teamgroup, 512GB SATA SSD Teamgroup, 1TB HDD WD</li>
-                    <li><strong>GPU</strong>: AMD Radeon Asrock RX 6700 XT Phantom Gaming</li>
-                    <li><strong>PSU</strong>: Cooler Master MWE GOLD 650W</li>
-                    <li><strong>Case</strong>: DarkFlash DK431 MESH</li>
-                    <li><strong>Monitor</strong>: ViewSonic 27" VX2758-2KP-MHD 240Hz</li>
-                    <li><strong>OS</strong>: Windows 11 Pro + WSL2</li>
-                  </ul>
-                </p>
+                <div class="device-specs">
+                  <div class="spec-group">
+                    <h4>🔧 Core Components</h4>
+                    <ul>
+                      <li><strong>CPU</strong>: Intel Core i5-13500 (6P+8E cores)</li>
+                      <li><strong>GPU</strong>: AMD RX 6700 XT Phantom Gaming (12GB)</li>
+                      <li><strong>RAM</strong>: 32GB DDR4 3200MHz</li>
+                      <li><strong>Motherboard</strong>: MSI B660 Tomahawk WiFi</li>
+                    </ul>
+                  </div>
+                  <div class="spec-group">
+                    <h4>💾 Storage & Power</h4>
+                    <ul>
+                      <li><strong>NVMe SSD</strong>: 1TB MSI + 1TB Teamgroup</li>
+                      <li><strong>SATA SSD</strong>: 512GB Teamgroup</li>
+                      <li><strong>HDD</strong>: 1TB WD Blue</li>
+                      <li><strong>PSU</strong>: Cooler Master MWE Gold 650W</li>
+                    </ul>
+                  </div>
+                  <div class="spec-group">
+                    <h4>🎮 Setup & Display</h4>
+                    <ul>
+                      <li><strong>Monitor</strong>: ViewSonic 27" 1440p 240Hz</li>
+                      <li><strong>Case</strong>: DarkFlash DK431 MESH</li>
+                      <li><strong>OS</strong>: Windows 11 Pro + WSL2</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="device">
+              <div class="device-header">
+                <h3>💻 Mobile Workstation</h3>
+                <span class="device-status active">Active</span>
+              </div>
               <div class="device-text">
-                <h3>Laptop 💻</h3>
-                <p>
-                  <ul>
-                    <li><strong>Model</strong>: Asus Vivobook S 14X OLED</li>
-                    <li><strong>Processor</strong>: Intel Core i7-12700H</li>
-                    <li><strong>RAM</strong>: 16GB DDR4 3200MHz</li>
-                    <li><strong>Storage</strong>: 512GB NVMe SSD</li>
-                    <li><strong>OS</strong>: Windows 11 Pro + WSL2</li>
-                  </ul>
-                </p>
+                <div class="device-specs">
+                  <div class="spec-group">
+                    <h4>📱 Specifications</h4>
+                    <ul>
+                      <li><strong>Model</strong>: Asus Vivobook S 14X OLED</li>
+                      <li><strong>CPU</strong>: Intel Core i7-12700H (6P+8E cores)</li>
+                      <li><strong>RAM</strong>: 16GB DDR4 3200MHz</li>
+                      <li><strong>Storage</strong>: 512GB NVMe SSD</li>
+                      <li><strong>Display</strong>: 14" OLED Touch Screen</li>
+                      <li><strong>OS</strong>: Windows 11 Pro + WSL2</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="device">
+              <div class="device-header">
+                <h3>📱 Daily Driver</h3>
+                <span class="device-status active">Active</span>
+              </div>
               <div class="device-text">
-                <h3>Phone 📱</h3>
-                <p>
-                  <ul>
-                    <li><strong>Model</strong>: Samsung Galaxy S23 FE</li>
-                    <li><strong>Processor</strong>: Exynos 2200</li>
-                    <li><strong>RAM</strong>: 8GB LPDDR5</li>
-                    <li><strong>Storage</strong>: 256GB UFS 3.1</li>
-                    <li><strong>OS</strong>: Android 12</li>
-                  </ul>
-                </p>
+                <div class="device-specs">
+                  <div class="spec-group">
+                    <h4>📲 Mobile Specs</h4>
+                    <ul>
+                      <li><strong>Model</strong>: Samsung Galaxy S23 FE</li>
+                      <li><strong>Chipset</strong>: Exynos 2200 (4nm)</li>
+                      <li><strong>RAM</strong>: 8GB LPDDR5</li>
+                      <li><strong>Storage</strong>: 256GB UFS 3.1</li>
+                      <li><strong>Display</strong>: 6.4" Dynamic AMOLED 120Hz</li>
+                      <li><strong>OS</strong>: Android 14 (One UI 6.1)</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
         </article>
       </aside>
     </div>
   </main>
 
   <footer class="footer-content">
-    <div class="socials" id="socials">
-      <ul>
-        <li>
-          <a rel="noopener" href="https://www.github.com/KatowProject" target="_blank">
-            <img src="https://simpleicons.org/icons/github.svg" alt="GitHub" class="social-icon" />
-            <span>Github</span>
-          </a>
-        </li>
-        <li>
-          <a rel="noopener" href="https://www.instagram.com/naufal.faqih" target="_blank">
-            <img src="https://simpleicons.org/icons/instagram.svg" alt="Instagram" class="social-icon" />
-            <span>Instagram</span>
-          </a>
-        </li>
-        <li>
-          <a rel="noopener" href="https://www.linkedin.com/in/m-naufal-faqih" target="_blank">
-            <img src="https://simpleicons.org/icons/linkedin.svg" alt="LinkedIn" class="social-icon" />
-            <span>LinkedIn</span>
-          </a>
-        </li>
-      </ul>
+    <div class="footer-container">
+      <div class="footer-quote">
+        <p class="quote-text">"Enjoy your day, with passion"</p>
+        <p class="quote-author">- Yourself</p>
+      </div>
+      
+      <div class="socials" id="socials">
+        <p class="connect-text">Let's Connect</p>
+        <ul>
+          <li>
+            <a rel="noopener" href="https://www.github.com/KatowProject" target="_blank">
+              <img src="https://simpleicons.org/icons/github.svg" alt="GitHub" class="social-icon" />
+              <span>Github</span>
+            </a>
+          </li>
+          <li>
+            <a rel="noopener" href="https://www.instagram.com/naufal.faqih" target="_blank">
+              <img src="https://simpleicons.org/icons/instagram.svg" alt="Instagram" class="social-icon" />
+              <span>Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a rel="noopener" href="https://www.linkedin.com/in/m-naufal-faqih" target="_blank">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="social-icon" />
+              <span>LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-status">
+        <div class="status-indicator">
+          <span class="status-dot"></span>
+          <span class="status-text">Available for opportunities</span>
+        </div>
+      </div>
     </div>
 
-    
-    <p>&copy; 2024 KatowProject</p>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year">2024</span> KatowProject | Built with 💙 and lots of ☕</p>
+    </div>
   </footer>
 
   <script src="./assets/js/main.js"></script>
